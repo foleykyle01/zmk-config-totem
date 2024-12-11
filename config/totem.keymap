@@ -68,6 +68,20 @@
             bindings = <&kp LEFT_WIN &kp LEFT_CONTROL>;
             label = "CHANGEDESKTOP";
         };
+
+        Copy: Copy {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LEFT_CONTROL &kp C>;
+            label = "COPY";
+        };
+
+        Paste: Paste {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LEFT_CONTROL &kp P>;
+            label = "PASTE";
+        };
     };
 
     keymap {
